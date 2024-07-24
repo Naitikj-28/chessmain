@@ -29,6 +29,11 @@
     width: 100%;
 }
 
+.form-content h1 {
+    color: #0095ff;
+    text-align: center;
+}
+
 .button-group {
     text-align: center;
     margin-bottom: 20px;

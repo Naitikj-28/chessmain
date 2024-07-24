@@ -87,7 +87,7 @@ function Sign({ onSignIn }) {
                 <div className="sign-container">
                     <div className="form-container">
                         <div className="form-content">
-                            <h1>Welcome to Chess Mania</h1>
+                            <h1>Chess Mania</h1>
                             <div className="button-group">
                                 <button onClick={handleSignInClick}>Sign In</button>
                                 <button onClick={handleSignUpClick}>Sign Up</button>
