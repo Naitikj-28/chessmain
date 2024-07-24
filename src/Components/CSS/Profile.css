@@ -1,0 +1,98 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+.profile-container {
+    background-color: rgb(171, 158, 158);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 600px;
+    margin: 6% auto 0 !important;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 0 200px rgba(0, 0, 0, 40);
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table th {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+}
+
+.table td {
+    position: relative;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f2f2f2;
+}
+
+.table-striped tbody tr:hover {
+    background-color: #e2e2e2;
+}
+
+.toggle-password-btn {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+}
+
+.toggle-password-btn:focus {
+    outline: none;
+}
+
+.circle-user-icon {
+    color: #595b5d;
+    margin-bottom: 20px;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.action-icon1,
+.action-icon2 {
+    font-size: 24px;
+    margin: 0 15px;
+    cursor: pointer;
+    transition: color 0.3s ease, border-color 0.3s ease;
+    border: 2px solid black;
+    padding: 5px;
+}
+
+.action-icon1:hover,
+.action-icon2:hover {
+    color: #007bff;
+    border-color: #007bff;
+}

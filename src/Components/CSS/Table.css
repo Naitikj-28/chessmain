@@ -1,0 +1,135 @@
+.table-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.table-content {
+    width: 95%;
+}
+
+.header {
+    flex-direction: column;
+}
+
+.header button {
+    margin-left: 2%;
+    padding: 5px 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.usern {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.matches-table1 {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    background-color: #9faf9c;
+    border: 3px solid black;
+}
+
+.matches-table1 th {
+    border: 1px solid black;
+    padding: 8px;
+    width: 25%;
+}
+
+.table-body1 {
+    max-height: 240px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    height: 215px;
+    border: 1px solid black;
+}
+
+.table-body1::-webkit-scrollbar {
+    display: none;
+}
+
+.table-body1 table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.table-body1 td {
+    border: 1px solid black;
+    padding: 8px;
+    width: 25%;
+}
+
+.fa-folder-open {
+    cursor: pointer;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    z-index: 10001;
+}
+
+@media (max-width: 1024px) {
+    .header {
+        align-items: flex-start;
+        margin-top: 25%;
+    }
+
+    .header button {
+        margin-left: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .table-content {
+        width: 100%;
+    }
+
+    .matches-table1 th,
+    .table-body1 td {
+        padding: 6px;
+    }
+}
+
+@media (max-width: 480px) {
+    .table-body1 {
+        max-height: 150px;
+        height: 150px;
+    }
+
+    .header h5 {
+        font-size: 18px;
+    }
+
+    .header button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .matches-table1 th,
+    .table-body1 td {
+        padding: 4px;
+        font-size: 14px;
+    }
+}

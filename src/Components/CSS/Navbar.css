@@ -1,0 +1,108 @@
+.navbar {
+    height: 60px;
+    padding: 5px 15px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1003;
+    background-color: #343a40;
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-icon {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-left: 10px;
+
+}
+
+.icon-button {
+    background: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: none;
+}
+
+.navbar-brand {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-left: 10px;
+    flex: 1;
+    text-align: center;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+.modal-dialog {
+    max-width: calc(100vw - 20px);
+    margin: 30px auto;
+    width: 90%;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .container-fluid {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 10px 15px;
+    }
+
+    .navbar-brand {
+        margin-left: 0;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .navbar-icon {
+        margin-left: 0;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    .modal-dialog {
+        width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container-fluid {
+        padding: 5px 10px;
+    }
+
+    .modal-dialog {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .modal-body {
+        padding: 10px;
+    }
+
+    .modal-footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

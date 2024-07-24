@@ -1,0 +1,169 @@
+.app {
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.pin-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pin-section input {
+  margin: 10px 0;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.pin-section button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.chessboard-container {
+  margin-top: 20px;
+}
+
+.chessboard-container p {
+  color: black;
+}
+
+.game-over {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  background-color: rgba(249, 249, 249, 1);
+  padding: 50px;
+  border-radius: 20%;
+  border: 6px solid rgb(0, 255, 0);
+  text-align: center;
+  z-index: 10;
+}
+
+.game-over p {
+  color: white;
+}
+
+.game-buttons {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.game-buttons button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.fullscreen-confetti {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+/* Mobile devices (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+  .app {
+    height: 100vh;
+    padding: 20px;
+  }
+
+  .pin-section {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .pin-section input {
+    font-size: 14px;
+  }
+
+  .pin-section button {
+    font-size: 14px;
+  }
+
+  .chessboard-container {
+    margin-top: 10px;
+    margin-left: 200px;
+  }
+
+  .game-over {
+    top: 50%;
+    padding: 20px;
+    font-size: 14px;
+  }
+}
+
+/* Tablet devices (min-width: 769px) and (max-width: 1024px) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .app {
+    height: 100vh;
+    padding: 30px;
+  }
+
+  .pin-section {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .pin-section input {
+    font-size: 16px;
+  }
+
+  .pin-section button {
+    font-size: 16px;
+  }
+
+  .chessboard-container {
+    margin-top: 15px;
+  }
+
+  .game-over {
+    top: 55%;
+    padding: 30px;
+    font-size: 16px;
+  }
+}
+
+/* Desktop devices (min-width: 1025px) */
+@media only screen and (min-width: 1025px) {
+  .app {
+    height: 100vh;
+    padding: 40px;
+  }
+
+  .pin-section {
+    width: 40%;
+    margin: 0 auto;
+  }
+
+  .pin-section input {
+    font-size: 18px;
+  }
+
+  .pin-section button {
+    font-size: 18px;
+  }
+
+  .chessboard-container {
+    margin-top: 20px;
+  }
+
+  .game-over {
+    top: 60%;
+    padding: 40px;
+    font-size: 18px;
+  }
+}

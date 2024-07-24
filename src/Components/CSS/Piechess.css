@@ -1,0 +1,37 @@
+.chart-container {
+    background: #9faf9c;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 10px;
+    max-width: 600px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+}
+
+.chart-container.empty {
+    background: #f9f9f9;
+}
+
+.responsive-chart {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .chart-container {
+        padding: 8px;
+    }
+
+    .responsive-chart {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .chart-container {
+        padding: 5px;
+    }
+
+    .responsive-chart {
+        width: 100%;
+    }
+}

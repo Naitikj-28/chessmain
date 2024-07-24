@@ -1,0 +1,66 @@
+.welcome-text {
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    text-align: center;
+    z-index: 1001;
+}
+
+.welcome-container {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    overflow: hidden;
+
+}
+
+.welcome-container img {
+    object-fit: fill;
+    width: 100%;
+    height: calc(100vh - 60px);
+}
+
+.welcome-container.fade-out .welcome-image {
+    animation: pixelate 15s forwards;
+}
+
+@keyframes pixelate {
+    0% {
+        filter: pixelate(0);
+        opacity: 1;
+    }
+
+    50% {
+        filter: pixelate(10px);
+        opacity: 0.5;
+    }
+
+    100% {
+        filter: pixelate(100px);
+        opacity: 0;
+    }
+}
+
+.next-page {
+    position: fixed;
+    top: 60px;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    z-index: 1002;
+    transition: left 0.5s ease-in-out;
+}
+
+.next-page.slide-in {
+    left: 0;
+}
