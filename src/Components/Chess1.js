@@ -5,7 +5,8 @@ import { Chess } from 'chess.js';
 import io from 'socket.io-client';
 import Confetti from 'react-confetti';
 
-const socket = io('http://192.168.29.9:4000');
+const socket = io('http://192.168.29.4:4000');
+// const socket = io('http://localhost:4000');
 
 function App() {
   const [game, setGame] = useState(new Chess());

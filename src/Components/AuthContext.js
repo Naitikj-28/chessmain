@@ -20,7 +20,8 @@ export const AuthProvider = ({ children }) => {
     };
 
     const updateUser = (updatedUser) => {
-        axios.put('http://192.168.29.9:3001/api/profile/update', updatedUser)
+        axios.put('http://192.168.29.4:3001/api/profile/update', updatedUser)
+            // axios.put('http://localhost:3001/api/profile/update', updatedUser)
             .then(response => {
                 setUser(response.data);
                 sessionStorage.setItem('user', JSON.stringify(response.data));
@@ -31,7 +32,8 @@ export const AuthProvider = ({ children }) => {
     };
 
     const deleteUser = (email) => {
-        axios.delete('http://192.168.29.9:3001/api/profile', { data: { email } })
+        axios.delete('http://192.168.29.4:3001/api/profile', { data: { email } })
+            // axios.delete('http://localhost:3001/api/profile', { data: { email } })
             .then(response => {
                 logout();
                 console.log('Profile deleted successfully');

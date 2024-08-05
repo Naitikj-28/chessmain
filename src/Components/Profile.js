@@ -20,7 +20,8 @@ function Profile() {
             setSignUpEmail(user.signUpEmail);
             setSignUpPassword(user.signUpPassword);
 
-            fetch('http://192.168.29.9:3001/api/profile', {
+            fetch('http://192.168.29.2:3001/api/profile', {
+                // fetch('http://localhost:3001/api/profile', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -51,7 +52,8 @@ function Profile() {
     };
 
     const handleUpdate = () => {
-        fetch('http://192.168.29.9:3001/api/profile', {
+        fetch('http://192.168.29.4:3001/api/profile', {
+            // fetch('http://localhost:3001/api/profile', {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',
@@ -75,7 +77,8 @@ function Profile() {
 
     const handleDelete = () => {
         if (window.confirm('Are you sure you want to delete your account?')) {
-            fetch('http://192.168.29.9:3001/api/profile', {
+            fetch('http://192.168.29.4:3001/api/profile', {
+                // fetch('http://localhost:3001/api/profile', {
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json',
@@ -180,3 +183,4 @@ function Profile() {
 }
 
 export default Profile;
+

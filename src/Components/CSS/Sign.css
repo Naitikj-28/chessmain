@@ -60,6 +60,10 @@
     font-size: bold;
 }
 
+.form-section h2 {
+    color: #ffffff;
+}
+
 .form-group {
     margin-bottom: 15px;
     font-size: bold;
