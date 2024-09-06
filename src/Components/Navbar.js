@@ -44,7 +44,7 @@ export default function Navbar() {
             winner: isDraw ? 'Draw' : formData.winner
         };
 
-        fetch('http://192.168.29.4:3001/api/matches', {
+        fetch('http://192.168.29.3:3001/api/matches', {
             // fetch('http://localhost:3001/api/matches', {
             method: 'POST',
             headers: {

@@ -6,7 +6,7 @@ function TableS4() {
     const [playerData, setPlayerData] = useState([]);
 
     useEffect(() => {
-        axios.get('http://192.168.29.4:3001/api/players')
+        axios.get('http://192.168.29.3:3001/api/players')
             // axios.get('http://localhost:3001/api/players')
             .then(response => {
                 const sortedPlayers = response.data.sort((a, b) => b.matches - a.matches);

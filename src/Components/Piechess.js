@@ -14,7 +14,7 @@ const PieRechartComponent = () => {
     const fetchData = async () => {
         try {
             // const response = await axios.get('http://localhost:3001/api/players');
-            const response = await axios.get('http://192.168.29.4:3001/api/players');
+            const response = await axios.get('http://192.168.29.3:3001/api/players');
             const playerWins = response.data;
 
             if (playerWins.length > 0) {

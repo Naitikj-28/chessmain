@@ -19,7 +19,7 @@ function Table() {
     const username = user?.username || '';
 
     useEffect(() => {
-        axios.get('http://192.168.29.4:3001/api/matches')
+        axios.get('http://192.168.29.3:3001/api/matches')
             // axios.get('http://localhost:3001/api/matches')
             .then(response => {
                 setMatches(response.data);
@@ -28,7 +28,7 @@ function Table() {
                 console.error('There was an error fetching the matches!', error);
             });
 
-        axios.get('http://192.168.29.4:3001/api/players')
+        axios.get('http://192.168.29.3:3001/api/players')
             // axios.get('http://localhost:3001/api/players')
             .then(response => {
                 setPlayerData(response.data);
